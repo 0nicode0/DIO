@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets Css/style.css">
+    <title>Praticando</title>
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <div class="extra"></div>
+        <p align="center">Bem vindo(a)!</p>
+        <div class="main">
+            <div class="header">
+                <h1>Praticando CSS</h1>
+            </div>
+
+            <div class="content">
+                <h2>Seletores</h2>
+                <p id="explicacao">São as formas de se aplicar o css no código! Todas as práticas estão em style.css! 😁
+                </p>
+                <ul>
+                    <li><b>Seletor de Tags:</b> Dentro da "head" de nosso html determinamos o estilo para todas as tags
+                        que
+                        desejarmos. Ex:
+                        h1, h2, h3 {background-color: black;}</li>
+                    <li><b>Seletor de ID:</b> Utilizamos um atributo chamado "id" que pode ser colocado do lado da tag,
+                        podendo
+                        assim nomea-lo para ficar mais fácil de achar no CSS, é bem útil quando queremos editar só uma
+                        coisa
+                        em
+                        especifico, mas que se repete não sendo uma classe. Também é editado dentro da head. Ex: #nome
+                        do id {color:
+                        green;}</li>
+                    <li class="seletor-classe"><b>Seletor de Classes:</b> Identifica um grupo e aplica o CSS somente
+                        nele.
+                        Também
+                        editado na head. Ex:
+                        .nome da
+                        class {blah blah blah}</li>
+                    <li><b>Seletor Universal:</b> Basicamente pega tudo no código e aplica o CSS. Tambem na head. Ex: *
+                        (sim, é
+                        só o
+                        asterisco) {blah blah}</li>
+                    <li><b>Seletor de Atributo:</b> Aplica o CSS na tag onde se encontra o atributo com seu valor ou
+                        nome.
+                        Head. Ex:
+                        [atributo+valor] {blah}</li>
+                </ul>
+                <h3>Seletor classes</h3>
+                <p class="seletor-classe-letra-maiuscula">Letra maiúscula.</p>
+                <h3>Seletor de Atributo [atrib]</h3>
+                <div>
+                    <ul>
+                        <li>
+                            <a title="YouTube" style="color: black;" href="https://www.youtube.com/"
+                                target="_blank">YouTube</a>
+                        </li>
+                        <li>
+                            <a title="Instagram" style="color: black;" href="https://www.instagram.com/login"
+                                target="_blank">Instagram</a>
+                        </li>
+                        <li>
+                            <a title="Netflix" style="color: white;" href="http://www.netflix.com/br/"
+                                target="_blank">Netflix</a>
+                        </li>
+                    </ul>
+                </div>
+                <h2>Combinadores</h2>
+                <h3>Agrupamento de Seletores</h3>
+                <p>Podemos aplicar as mesmas regras CSS para vários seletores diferentes. Para isso, podemos separar os
+                    seletores
+                    utilizando uma vírgula(,).
+                </p>
+                <p>Assim não precisamos ficar copiando e colando os mesmos códigos para todos, nós podemos fazer um só
+                    bloco
+                    de CSS
+                    e reutilizar as mesmas regras!</p>
+                <a id="link-referencia" href="#">Clique para ver a documentação</a><br><br>
+                <a id="link-suporte" href="#">Clique para entrar em contato</a><br><br>
+                <a id="voltar" href="#">Voltar</a><br><br>
+                <button id="botao-fechar">Fechar página</button>
+                <h3>Combinador descendente</h3>
+                <p>Combinador Descendente: Pode ser aplicado com o espaço entre uma tag e outra que se deseja aplicar o
+                    mesmo estilo
+                    Css e que são descendentes.<br>
+                    Ex: li li {background-color: black} <br>
+                    Mais um exemplo:
+                </p>
+                <ul>
+                    <li class="fundo-verde" id="lista">
+                        <div>Item 1</div>
+                        <ul id="sublista">
+                            <li>Sub item A</li>
+                            <li>Sub item B</li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="combinadorFi">
+                    <h3>Combinador filho</h3>
+                    <p>Combinador filho: É aplicado pelo sinal de maior ">" aos seus "filhos" ou a tag dentro dele.<br>
+                        Ex: div > p {color: blue} <br>
+                        Mais um exemplo:</p>
+                    <div>
+                        <p>Parágrafo 1, dentro da Div.</p>
+                        <p>Parágrafo 2, dentro da Div.</p>
+                        <span>
+                            <p>Parágrafo 3, dentro da Div, dentro da Span.</p>
+                        </span>
+                    </div>
+                    <p>Parágrafo 4, fora da Div.</p>
+                    <p>Parágrafo 5, fora da Div.</p>
+                </div>
+                <h3>Irmão adjagente</h3>
+                <p>Aplicado pelo sinal de mais "+", usamos pra selecionar o elemento depois do seletor que definirmos a
+                    esquerda.
+                    <br>
+                    Ex: div + p {color: tomato} (neste caso ele sempre pegará o primeiro "p" q apararecer, ignorando os
+                    outros).
+                </p>
+                <h3>Irmão geral</h3>
+                <p>Sinal de tíl "~", pega todos os irmãos da tag informada.<br>
+                    Ex: div ~ p {blah blah blah}</p>
+                <h2>Propriedades de dimencionamento e espaçamento</h2>
+                <h3>Width e Height (Largura e Altura)</h3>
+                Altura e largura. O width é somado da seguinte forma: width = largura + borda + padding; Neles podemos
+                aplicar
+                alguns elementos predefinidos:
+                <ul>
+                    <li>auto: Aplica um valor automático, alterado sempre que o navegador achar necessário;</li>
+                    <li>initial: Aplica o valor padrão, geralmente usado quando não se sabe esse padrão;</li>
+                    <li>inherit: Define o valor da propriedade de acordo com seu elemento pai;</li>
+                    <li>min e max-width: Largura máxima e minima, se adapta de acordo com o conteúdo;</li>
+                    <li>min e max-height: Altura máxima e minima, se adapta de acordo com o conteúdo;</li>
+                </ul>
+                <div class="exemplo">Exemplo</div>
+                <h3>Margin</h3>
+                <p>Cria espaçamento externo em volta do elemento. Ex: .main {margin: 10px 10px 10px 10px} (Ele aplica o
+                    valor para
+                    toda as direções podendo ser alterado). Tem suas variações tbm:</p>
+                <ul>
+                    <li>margin-top: Coloca margem só em cima;</li>
+                    <li>margin-bottom: Coloca margem só em baixo;</li>
+                    <li>margin-left: Coloca margem só na esquerda;</li>
+                    <li>margin-right: Coloca margem só na direita.</li>
+                </ul>
+                <div class="margin1" id="elemento-01"></div>
+                <div class="margin2" id="elemento-02"></div>
+                <h3>Padding</h3>
+                <p>Aplica espaço interno separando o conteúdo do elemento das bordas, podendo ser aplicado para todos os
+                    lados
+                    também, as variações são as mesmas que a da margin.</p>
+                <div class="padding1" id="elemento-01">Lorem ipsum dolor sit amet.</div>
+                <div class="padding2" id="elemento-02">Lorem ipsum dolor sit amet.</div>
+                <h3>Box sizing</h3>
+                <p>Aceita dois valores:</p>
+                <ul>
+                    <li><b>Content-box:</b> Soma o padding com o height</li>
+                    <li><b>Border-box:</b> Soma o padding com as bordas, determinando largura e altura</li>
+                </ul>
+
+                <h2>Apresentação à estilização básica com Css</h2>
+                <h3>Cores</h3>
+                <p>Existem várias formas de difinir cores utilizando o CSS. Elas são:</p>
+                <ul>
+                    <li>Core pré-definidas</li>
+                    <li>paralavra-chave "currentcolor"</li>
+                    <li>Hexadecimal</li>
+                    <li>Hexadecimal com transparência</li>
+                    <li>RGA</li>
+                    <li>USL</li>
+                    <li>HSLA(hue, saturation, lightness)</li>
+                </ul>
+                <h3>Imagens</h3>
+                <ul>
+                    <li><strong>Objetict Fit</strong></li>
+                </ul>
+                <code align="center">object-fit: fill;</code> (padrão)
+                <br>
+                <img align="center"
+                    style="border:5px solid black; width: 100%; height:100%; width: 200px; height: 300px;"
+                    src="midias/Kimi no mistery.jpg" alt="ex1" id="fill">
+                <br>
+                <br>
+                <code align="center">object-fit: contain;</code> (padrão)
+                <br>
+                <img align="center"
+                    style="border:5px solid black; width: 100%; height:100%; width: 400px; height: 300px;"
+                    src="midias/Kimi no mistery.jpg" alt="ex1" id="contain">
+                <br>
+                <br>
+                <code align="center">object-fit: cover;</code> (padrão)
+                <br>
+                <img align="center"
+                    style="border:5px solid black; width: 100%; height:100%; width: 300px; height: 300px;"
+                    src="midias/Kimi no mistery.jpg" alt="ex1" id="cover">
+                <br>
+                <br>
+                <code align="center">object-fit: none;</code> (padrão)
+                <br>
+                <img align="center"
+                    style="border:5px solid black; width: 100%; height:100%; width: 400px; height: 300px;"
+                    src="midias/Kimi no mistery.jpg" alt="ex1" id="none">
+                <br>
+                <br>
+                <code align="center">object-fit: scale-down;</code> (padrão)
+                <br>
+                <img align="center"
+                    style="border:5px solid black; width: 100%; height:100%; width: 400px; height: 300px; "
+                    src="midias/Kimi no mistery.jpg" alt="ex1" id="scale-down">
+                <br>
+                <br>
+                <p><strong>Objetc-position:</strong> especifica como deve ser posicionado verticalmente como
+                    horizontalmente, pode centralizar imagens ou vídeos; <br>
+                    Ex: img {object-position: 50% 50%;}</p>
+
+                <h2>Fundo dos elementos</h2>
+                <h3>Alterando o fundo dos elementos</h3>
+                <div id="exemplofundo1"></div>
+                <div id="exemplofundo2"></div>
+                <div id="exemplofundo3"></div>
+                <div id="exemplofundo4"></div>
+
+                <p>Site para alterar o fundo com CSS: <a
+                        href="https://projects.verou.me/css3patterns/">https://projects.verou.me/css3patterns/</a></p>
+
+                <h3>Redimencionando imagens de fundo</h3>
+                <code>background-size: auto;</code>
+                <div id="exemploredimencionando1"></div>
+                <br>
+                <code>background-size: cover;</code>
+                <div id="exemploredimencionando2"></div>
+                <br>
+                <code>background-size: contain;</code>
+                <div id="exemploredimencionando3"></div>
+                <br>
+                <code>background-size: valor;</code>
+                <div id="exemploredimencionando4"></div>
+                <br>
+                <code>background-size: camada-1 camada-2;</code>
+                <div id="exemploredimencionando5"></div>
+
+                <h3>Repetição das imagens de fundo</h3>
+                    <code>background-repeat: repeat;</code>
+                    <div id="repeat1"></div>
+                    <br>
+                    <code>background-repeat: repeat-x;</code>
+                    <div id="repeat2"></div>
+                    <br>
+                    <code>background-repeat: repeat-y;</code>
+                    <div id="repeat3"></div>
+                    <br>
+                    <code>background-repeat: space;</code>
+                    <div id="repeat4"></div>
+                    <br>
+                    <code>background-repeat: round;</code>
+                    <div id="repeat5"></div>
+                    <br>
+                    <code>background-repeat: no-repeat;</code>
+                    <div id="repeat6"></div>
+                    
+                    <h3>Posicionamento da imagem de fundo</h3>
+                    <div class="position"></div>
+
+                    <h3>Propriedade background=attachment</h3>
+                    <div class="attachment">
+                        <code>background-attachment: fixed;</code>
+                        <div class="exemploAttchment">
+                            <div id="fixed">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores nostrum minus porro at dolor voluptate culpa reprehenderit. Cupiditate vero, quod sequi impedit eum obcaecati suscipit, deserunt rem totam voluptas minima.</div>
+                        </div>
+                        <p>Em imagens maiores, conforme rola para baixo e para cima, a imagem também se mexe, mas quando meche na barra de rolagem ao lado da imagem, ela fica parada, ou fixed :D</p>
+                        <br>
+                        <code>background-attachment: scroll;</code>   
+                        <div class="exemploAttchment">           
+                            <div id="scroll">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi delectus in eaque quasi modi, labore mollitia nam assumenda ullam obcaecati qui quod reiciendis beatae voluptatum nesciunt amet quas veritatis voluptatem!</div>
+                        </div>
+                        <br>
+                        <code>background-attachment: local;</code>
+                        <div class="exemploAttchment">    
+                            <div id="local">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, sunt deserunt! In alias nostrum quaerat vitae doloribus voluptatem eius voluptates aut quasi dolorem sequi ipsam sed officia, laudantium accusamus iusto.</div>                        
+                        </div>
+                    </div>
+                    <h3>Proprieade background Origin</h3>
+                    <h4>Ponto de origem</h4>
+                    <div class="Origin">
+                        <code>background-origin: padding-box;</code>
+                        <div class="exemploOrigin">
+                            <div id="padding-box"></div>
+                        </div>
+                        <br>
+                        <code>background-oringin: border-box;</code>   
+                        <div class="exemploOrigin">           
+                            <div id="border-box"></div>
+                        </div>
+                        <br>
+                        <code>background-origin: content-box;</code>
+                        <div class="exemploOrigin">    
+                            <div id="content-box"></div>                        
+                        </div>
+                    </div>
+
+                    <h3>Propriedade Background Clip</h3>
+                    <div class="clip">
+                        <code>background-clip: padding-box;</code>
+                        <div class="exemploClip">
+                            <div id="padding-box"></div>
+                        </div>
+                        <br>
+                        <code>background-clip: border-box;</code>   
+                        <div class="exemploClip">           
+                            <div id="border-box"></div>
+                        </div>
+                        <br>
+                        <code>background-clip: content-box;</code>
+                        <div class="exemploClip">    
+                            <div id="content-box"></div>                        
+                        </div>
+                        <br>
+                        <code>background-clip: text;</code>
+                        <div class="exemploClip">    
+                            <div id="text">TRILHA CSS</div>                        
+                        </div>
+                    </div>
+                    
+                    <h3>Mesclagem</h3>
+                    <p align="center">Veja clicando <a href="https://codepen.io/team/css-tricks/pen/GgavOP?editors=1100" target="_blank">aqui.</a></p>
+            </div>
+        </div>
+    </div>
+    </div>
+
+</body>
+
+</html>

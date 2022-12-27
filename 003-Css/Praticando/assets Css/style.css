@@ -1,0 +1,403 @@
+/*CSS*/
+
+.wrapper {
+    font-family: Comic Sans MS;
+    background:
+    linear-gradient(27deg, #1f1d1fe5 5px, transparent 5px) 0 5px,
+    linear-gradient(207deg, #424042 5px, transparent 5px) 10px 0px,
+    linear-gradient(27deg, #242324 5px, transparent 5px) 0px 10px,
+    linear-gradient(207deg, #1f1e1f 5px, transparent 5px) 10px 5px,
+    linear-gradient(90deg, #363536 10px, transparent 10px),
+    linear-gradient(#2e2b2e 25%, #3f3b3f 25%, #312e31 50%, transparent 50%, transparent 75%, #1f1e1f 75%, #181718);
+    background-color: #221f22;
+    background-size: 20px 20px;
+}
+.extra {
+    height: 0px;
+    width: auto;
+    padding: 10px 10px 10px 10px;
+}
+.main {
+    flex-flow: column;
+    width: 70%;
+    align-self: center;
+    display: flex;
+    margin: 0 auto;
+    border: 1px solid;
+    -webkit-box-shadow: 9px 7px 31px -8px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 9px 7px 31px -8px rgba(0, 0, 0, 0.75);
+    box-shadow: 9px 7px 31px -8px rgba(0, 0, 0, 0.75);
+}
+.header {
+    -webkit-box-shadow: 9px 7px 31px -8px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 9px 7px 31px -8px rgba(0, 0, 0, 0.75);
+    box-shadow: 9px 7px 31px -8px rgba(0, 0, 0, 0.75);
+    min-height: 50px;
+    background-color: rgb(0, 0, 0);
+    padding: 15px 15px 0px;
+}
+.content {
+    background-color: rgb(255, 255, 255);
+    background-image: linear-gradient(90deg, transparent 79px, #abced4 79px, #fd9090 8px, transparent 81px), linear-gradient(#eee .1em, transparent .1em);
+    background-size: 100% 1.2em;
+
+    padding: 80px;
+    justify-content: center;
+}
+
+/*Seletor Universal👇🏻*/
+*{
+    font-size: 18px;
+    font-family: Comic Sans MS;
+}
+
+/*Seletor de tag*/
+
+h1{
+    background: black;
+    color: antiquewhite;
+    text-align: center;
+    font-size: 20px;
+}
+h2{
+    background-color: darkblue;
+    color: white;
+    text-align: center;
+}
+h3{
+    text-align: center;
+    background: lightgrey;
+}
+
+/*Seletor de id*/
+#boas-vindas{
+    text-align: center;
+}
+#explicacao{
+    text-align: center;
+}
+
+/*Seletor classe*/
+.seletor-classe{
+    background: lightyellow;
+    text-align: center;
+}
+.seletor-classe-letra-maiuscula{
+    text-align: center;
+    text-transform: uppercase; /*Letra maiúscula*/
+}
+
+/*Seletor de atributo*/
+[href^="http://"] {
+    background: darkred;
+}
+[href$="login"]{
+    background: pink;
+}
+[title="YouTube"]{
+background: lightcoral;
+}
+
+/*Combinador descendente*/
+.fundo-verde li{
+    background: lightgreen;
+}
+
+/*Combinador filho*/
+.combinadorFi > p {
+    background: lightskyblue;
+    color: darkblue;
+}
+
+.exemplo{
+    background: lightsteelblue;
+    width: 200px;
+    height: 50px;
+}
+
+/*Margin*/
+.margin1{
+    width: 100px;
+    height: 100px;
+}
+.margin2{
+    width: 100px;
+    height: 100px;
+}
+#elemento-01{   
+    background: darkmagenta;
+    margin: auto;
+}
+#elemento-02{
+    background: darksalmon;
+    margin: auto;
+    margin-top: 10px;
+}
+
+.padding1{
+    width: 100px;
+    height: 100px;
+    padding: 30px;
+}
+.padding2{
+    width: 100px;
+    height: 100px;
+    padding: 60px;
+}
+
+#fill{
+    width: 100%;
+    height: 100%;
+}
+#contain{
+    object-fit: contain;
+}
+
+#cover{
+    object-fit: cover;
+}
+
+#none{
+    object-fit: none;
+}
+
+#scale-down{
+    object-fit: scale-down;
+}
+
+/*Alterando o fundo*/
+#exemplofundo1{
+    margin: auto;
+    width: 200px;
+    height: 200px;
+    background-color: palevioletred;
+    background-image: linear-gradient(lightpink, palevioletred, purple);
+}
+
+#exemplofundo2{
+    margin: auto;
+    width: 200px;
+    height: 200px;
+    background-color: palevioletred;
+    background-image: radial-gradient(lightpink, palevioletred, rgb(201, 22, 201));
+}
+
+#exemplofundo3{
+    margin: auto;
+    width: 200px;
+    height: 200px;
+    background-color: palevioletred;
+    background-image: repeating-linear-gradient(to top, #b45f7b 0 20px, lightpink 20px 40px);
+}
+
+#exemplofundo4{
+    margin: auto;
+    width: 300px;
+    height: 300px;
+    background-image: url('midia/Captura\ de\ Tela\ \(98\).png'), url('midia/RobloxScreenShot20190414_214754123.png');
+}
+
+/*Redimencionando a imagem de fundo*/
+#exemploredimencionando1{
+    margin: auto;
+    width: 300px;
+    height: 300px;
+    background-size: auto;
+    background-image: url('midia/exemploredimencionando.png')
+}
+
+#exemploredimencionando2{
+    margin: auto;
+    width: 300px;
+    height: 300px;
+    background-size: cover;
+    background-image: url('midia/exemploredimencionando.png')
+}
+
+#exemploredimencionando3{
+    margin: auto;
+    width: 300px;
+    height: 300px;
+    background-size: contain;
+    background-image: url('midia/exemploredimencionando.png')
+}
+
+#exemploredimencionando4{
+    margin: auto;
+    width: 300px;
+    height: 300px;
+    background-size: 80%;
+    background-image: url('midia/exemploredimencionando.png')
+}
+
+#exemploredimencionando5{
+    margin: auto;
+    width: 300px;
+    height: 300px;
+    background-size: 200% 100% cover;
+    background-image: url('midia/detalhe\ medieval\ decorativo.png'), url('midia/exemploredimencionando.png')
+}
+
+/*Repetição de imagens de fundo*/
+#repeat1{
+    margin: auto;
+    width: 200px;
+    height: 200px;
+    background-image: url('midia/Exemplo\ repeat.png');
+    background-size: 120%;
+
+}
+
+#repeat2{
+    margin: auto;
+    width: 300px;
+    height: 300px;
+    background-image: url('midia/Exemplo\ repeat.png');
+    background-size: 120%;
+    background-repeat: repeat-x;
+}
+
+#repeat3{
+    margin: auto;
+    width: 300px;
+    height: 300px;
+    background-image: url('midia/Exemplo\ repeat.png');
+    background-size: 120%;
+    background-repeat: repeat-y;
+}
+
+#repeat4{
+    margin: auto;
+    width: 300px;
+    height: 300px;
+    background-image: url('midia/Exemplo\ repeat.png' );
+    background-size: 120%;
+    background-repeat: space;
+}
+
+#repeat5{
+    margin: auto;
+    width: 300px;
+    height: 300px;
+    background-image: url('midia/Exemplo\ repeat.png' );
+    background-size: 120%;
+    background-repeat: round;
+}
+
+#repeat6{
+    margin: auto;
+    width: 300px;
+    height: 300px;
+    background-image: url('midia/Exemplo\ repeat.png' );
+    background-size: 120%;
+    background-repeat: no-repeat;
+}
+
+.position{
+    width: 200px;
+    height: 200px;
+    background-image: url('midia/redimencionamento\ de\ imagem\ exemplo.png');
+    background-size: 120px;
+    border: 1px solid red;
+    background-repeat: no-repeat;
+    background-position: bottom 10px right 20px;
+}
+
+/*background-attachment*/
+.attachment{
+
+}
+.exemploAttchment{
+    width: 200px;
+    height: 200px;
+    background-image: url('midia/Fuji-san.webp');
+    background-size: cover;
+    border: 1px solid red;
+    overflow: auto;
+}
+
+#fixed{
+    background-attachment: fixed;
+}
+
+#scroll{
+    background-attachment: scroll;
+}
+
+#local{
+    background-attachment: local;
+}
+
+/*Backgoround Origin*/
+
+.Origin{
+
+}
+.exemploOrigin{
+    width: 200px;
+    height: 200px;
+    background-image: url('midia/Fuji-san.webp');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    border: 15px dashed violet;
+    padding: 30px;
+}
+
+#fixed{
+    background-origin: padding-box;
+}
+
+#scroll{
+    background-origin: border-box;
+}
+
+#local{
+    background-origin: content-box;
+}
+
+/*Background Clip*/
+.clip{
+    height: 200vh;
+}
+.exemploClip{
+    width: 200px;
+    height: 200px;
+    border: 15px dashed rgb(238, 236, 130);
+    padding: 30px;
+    background-color: palevioletred;
+
+    background-color: hsl(34, 53%, 82%);
+background-image: repeating-linear-gradient(45deg, transparent 5px, hsla(197, 62%, 11%, 0.5) 5px, hsla(197, 62%, 11%, 0.5) 10px,
+  hsla(5, 53%, 63%, 0) 10px, hsla(5, 53%, 63%, 0) 35px, hsla(5, 53%, 63%, 0.5) 35px, hsla(5, 53%, 63%, 0.5) 40px,
+  hsla(197, 62%, 11%, 0.5) 40px, hsla(197, 62%, 11%, 0.5) 50px, hsla(197, 62%, 11%, 0) 50px, hsla(197, 62%, 11%, 0) 60px,
+  hsla(5, 53%, 63%, 0.5) 60px, hsla(5, 53%, 63%, 0.5) 70px, hsla(35, 91%, 65%, 0.5) 70px, hsla(35, 91%, 65%, 0.5) 80px,
+  hsla(35, 91%, 65%, 0) 80px, hsla(35, 91%, 65%, 0) 90px, hsla(5, 53%, 63%, 0.5) 90px, hsla(5, 53%, 63%, 0.5) 110px,
+  hsla(5, 53%, 63%, 0) 110px, hsla(5, 53%, 63%, 0) 120px, hsla(197, 62%, 11%, 0.5) 120px, hsla(197, 62%, 11%, 0.5) 140px
+  ),
+repeating-linear-gradient(135deg, transparent 5px, hsla(197, 62%, 11%, 0.5) 5px, hsla(197, 62%, 11%, 0.5) 10px,
+  hsla(5, 53%, 63%, 0) 10px, hsla(5, 53%, 63%, 0) 35px, hsla(5, 53%, 63%, 0.5) 35px, hsla(5, 53%, 63%, 0.5) 40px,
+  hsla(197, 62%, 11%, 0.5) 40px, hsla(197, 62%, 11%, 0.5) 50px, hsla(197, 62%, 11%, 0) 50px, hsla(197, 62%, 11%, 0) 60px,
+  hsla(5, 53%, 63%, 0.5) 60px, hsla(5, 53%, 63%, 0.5) 70px, hsla(35, 91%, 65%, 0.5) 70px, hsla(35, 91%, 65%, 0.5) 80px,
+  hsla(35, 91%, 65%, 0) 80px, hsla(35, 91%, 65%, 0) 90px, hsla(5, 53%, 63%, 0.5) 90px, hsla(5, 53%, 63%, 0.5) 110px,
+  hsla(5, 53%, 63%, 0) 110px, hsla(5, 53%, 63%, 0) 140px, hsla(197, 62%, 11%, 0.5) 140px, hsla(197, 62%, 11%, 0.5) 160px
+);
+}
+
+#fixed{
+    background-clip: padding-box;
+}
+
+#scroll{
+    background-clip: border-box;
+}
+
+#local{
+    background-clip: content-box;
+}
+
+#text{
+    -webkit-background-clip: text;
+    color: transparent;
+    border: 5px solid black;
+    background-clip: text;
+}

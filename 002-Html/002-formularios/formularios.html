@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+</head>
+
+<body>
+    <font face="Comic Sans MS">
+        <h1>Tags para formulários</h1>
+        <hr>
+        <h2>Tag form</h2>
+        <!-- Olhe os atributos hehe.-->
+        <form name="cadastro" onsubmit="alert('Enviei formulario');" autocomplete="on" target="_blank" method="post"
+            action="https://github.com/0nicode0/Estudos">
+            Nome: <input type="text" name="name"><br>
+            Idade: <input type="number" name="age"><br>
+            Senha: <input type="password" name="password"><br>
+            <button type="submit">Enviar</button><br>
+        </form>
+        <hr>
+        <h2>Tag input e seus tipos</h2>
+        <form>
+            <label>Text: </label><input type="text"><br>
+            <label>Number: </label><input type="number" min="0" max="99" step="5"><br>
+            <label>Range: </label><input type="range" min="0" max="100" value="90"><br>
+            <label>Color: </label><input type="color"><br>
+            <label>E-mail: </label><input type="email"><br>
+            <label>Url: </label><input type="url"><br>
+            <label>Date: </label><input type="date"><br>
+            <label>Week: </label><input type="week"><br>
+            <label>Month: </label><input type="month"><br>
+            <label>Checkbox: </label><input type="checkbox"><input type="checkbox"><br>
+            <label>Radio: </label><input type="radio" name="aceita"><input type="radio" name="aceita"><br>
+            <label>Hidden: </label><input type="hidden"><br>
+            <label>File: </label><input type="file"><br>
+            <label>Search: </label><input type="search"><br>
+            <label>Button: </label><input type="submit" value="Enviar"><br>
+        </form>
+        <hr>
+        <h2>Checkbox e Radio button</h2>
+        <!--PRESTA ATENÇÃO!!-->
+        <h3>Exemplo:</h3>
+        <h4>Peça sua deliciosa pizza!</h4>
+        <form method="get">
+            <p>Quais são suas preferências, por favor?</p>
+            <input type="checkbox" name="preferencia[]" value="queijo"> + Queijo<br>
+            <input type="checkbox" name="preferencia[]" value="calabresa"> + Calabresa<br>
+            <input type="checkbox" name="preferencia[]" value="cebola"> + Cebola<br>
+            <input type="checkbox" name="preferencia[]" value="azeitona"> + Azeitona<br>
+            <p>Borda recheada?</p>
+            <input type="radio" name="borda" value="sim">Sim<br>
+            <input type="radio" name="borda" value="nao">Não<br>
+            <p>Bebida</p>
+            <input type="radio" name="bebida" value="suco">Suco<br>
+            <input type="radio" name="bebida" value="refrigerante">Refrigerante<br>
+            <input type="radio" name="bebida" value="agua">Água<br>
+            <input type="radio" name="bebida" value="nenhum">Nenhum<br>
+            <br>
+            <button type="submit">Enviar pedido</button>
+        </form>
+        <hr>
+        <h2>Button e seus tipos</h2>
+        <form onsubmit="" method="get">
+            <label>Nome*: </label><input type="text" name="name"><br>
+            <label>Idade*: </label><input type="number" name="age"><br>
+            <label>Password*: </label><input type="password" name="password"><br>
+            <button type="button">Button-Botão</button><br>
+            <button type="reset">Reset-Resetar</button><br>
+            <button type="submit">Submit-Enviar</button><br>
+        </form>
+        <hr>
+        <h2>Select e seus tipos</h2>
+        <p>Caixa de opções</p>
+        <form onsubmit="" method="get">
+            <label>Nome: </label><input type="text" name="name"><br>
+            <label>Cargo: </label>
+            <select name="role" multiple>
+                <!--Multiple pode selecionar mais de uma opção na caixa.-->
+                <option value="">Selecione cargo</option>
+                <option value="gerente">Gerente</option>
+                <option value="diretor">Diretor(a)</option>
+                <option selected value="presidente">Presidente</option>
+            </select>
+            <br>
+            <label>Assunto: </label><input type="text" name="subject"><br>
+            <button type="submit">Submit-Enviar</button>
+        </form>
+        <hr>
+        <h2>Textarea</h2>
+        <form>
+            <label>Mensagem: </label>
+            <textarea name="message" id="" cols="20" rows="2"></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+        <br>
+        <hr>
+    </font>
+</body>
+
+</html>

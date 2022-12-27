@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estruturas e formatações</title>
+    <style>
+        span {
+            color: rgba(255, 0, 0, 0.5);
+        }
+
+        fieldset {
+            margin: 15px 0;
+            border-radius: 10px;
+            border-color: rebeccapurple;
+        }
+    </style>
+</head>
+
+<body>
+    <font face="Comic Sans MS">
+        <h1>Estruturando e formatando 😃</h1>
+        <hr>
+        <h2>Formatando Textos</h2>
+        <ul>
+            <li>
+                <i>(i) Itálico</i>
+            </li>
+            <li>
+                <u>(u) Underline</u>
+            </li>
+            <li>
+                <p><b>(b) Negrito</b><br> Obs: Use a tag (strong) quando quiser destacar algo, mas use (b) quando quiser
+                    colocar somente em Negrito.</p>
+            </li>
+            <li>
+                <b><u>(u + i) Combinando</u></b>
+            </li>
+            <li>
+                <mark>(mark) Marca texto</mark>
+            </li>
+            <li>
+
+                (Sup) Eleva... Ex: <sup>*</sup> <sup>2</sup>
+
+            </li>
+            <li>
+                (Sub) Rebaixa... Ex: <sub>*</sub> <sub>2</sub>
+            </li>
+            <li>
+                <blockquote>(blockquote) Espaçamento</blockquote>
+            </li>
+            <li>
+                (lorem) Texto aleatório: Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora dolore
+                sapiente
+                minima ratione quis debitis quasi, obcaecati alias laudantium expedita quidem voluptatum perferendis
+                rerum
+                culpa libero optio? Blanditiis, repellat natus!
+            </li>
+            <li>
+                <font color="blue" face="Arial">(font) Fonte</font>
+            </li>
+        </ul>
+        <hr>
+        <h2>Estruturando o Html para o Css com as tags DIV e SPAN</h2>
+        <ul>
+            <p><b>(Use f12!) <br> Div</b></p>
+            <div id="menu-lateral">
+                <div id="links">
+                    <li> <a href="">Link 1</a></li>
+                    <li> <a href="">Link 2</a></li>
+                    <li> <a href="">Link 3</a></li>
+                </div>
+            </div>
+            <p><b>Span</b></p>
+            <p>Jw<span>.</span>org</p>
+        </ul>
+        <hr>
+        <h2>Fieldsets e legend</h2>
+        <fieldset>
+            <legend>Dados pessoais</legend>
+            <label>Nome </label><input type="text">
+            <label>Idade </label><input type="number">
+            <label>Profissão </label><input type="text">
+        </fieldset>
+        <hr>
+        <h2>Embed</h2>
+        <p>Não semântico...</p>
+        <embed src="MP4.mp4" width="400" height="250">
+        <p>Semântico</p>
+        <video controls autoplay width="400" height="250">
+            <source src="MP44.mp4">
+        </video>
+        <hr>
+        <h2>Iframe</h2>
+        <p>Url de site com permissão...</p>
+        <iframe src="http://dio.me" width="400" height="300"></iframe>
+        <p>Maps...</p>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6615837.956481983!2d132.93611891758516!3d35.9374375145343!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34674e0fd77f192f%3A0xf54275d47c665244!2zSmFww6Nv!5e0!3m2!1spt-BR!2sbr!4v1668125125671!5m2!1spt-BR!2sbr"
+            width="400" height="350" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <p>YouTube... </p>
+        <iframe width="400" height="315" src="https://www.youtube.com/embed/Zdfx1IE6Cco?start=2590"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+        </iframe>
+    </font>
+</body>
+
+</html>

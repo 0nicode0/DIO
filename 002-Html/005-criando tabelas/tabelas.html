@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        table thead th {
+            background-color: darkslategrey;
+            color: white;
+        }
+        table tfoot td {
+            background-color: rgb(180, 180, 180);
+        }
+        table tbody tr:nth-child(even) td {
+            background-color: rgb(233, 227, 227);
+        }
+        table tbody tr:hover td {
+            background-color: rgb(172, 166, 166);
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <font face="Comic Sans MS">
+        <h1 align="center">Trabalhando com tabelas</h1>
+        <hr>
+        <h2 align="center">Tag table</h2>
+        <table sumary="Tabela exemplo..." width="250" cellpadding="5" align="center">
+            <caption>Tabela exemplo</caption>
+            <thead>
+                <tr>
+                    <th colspan="2">Dados</th>
+                </tr>
+                <tr>
+                    <th title="Nome completo">Nome</th>
+                    <!--Cabeçalho em tabelas-->
+                    <th>Idade</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr id="1">
+                    <td>Nicoly</td>
+                    <td>19</td>
+                </tr>
+                <tr id="2">
+                    <td>Jorge</td>
+                    <td>24</td>
+                </tr>
+                <tr id="3">
+                    <td>Janaina</td>
+                    <td>22</td>
+                </tr>
+                <tr id="4">
+                    <td>Bruno</td>
+                    <td>25</td>
+                </tr>
+                <tr id="5">
+                    <td>Jorjana</td>
+                    <td>21</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td>Total</td>
+                    <td>5</td>
+                </tr>
+            </tfoot>
+        </table>
+    </font>
+</body>
+
+</html>

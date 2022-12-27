@@ -1,0 +1,21 @@
+.texto{
+    text-align: center;
+    font-size: 20px;
+    font-family: Comic Sans MS;
+}
+
+h1{
+    background: lightseagreen;
+    color: white;
+}
+h2{
+    background: lightgrey;
+    color: darkblue;
+}
+h3{
+    background: rgb(247, 143, 143);
+}
+p{
+    color: white;
+    background: darkgray;
+}
